@@ -1,7 +1,118 @@
 {
-    "aaa":[
+    "user":[
         {
-            "name":"aaa"
+          "id": 1,
+          "full_name": "Cao Quang Sang",
+          "user_name": "sangleader",
+          "pass_word": "123",
+          "user_area": "west",
+          "user_role": 1
+        },
+        {
+          "id": 2,
+          "full_name": "Lê Minh Huy",
+          "user_name": "huy1",
+          "pass_word": "123",
+          "user_area": "east",
+          "user_role": 0
+        },
+        {
+          "id": 3,
+          "full_name": "Lê Thị Nhàn",
+          "user_name": "ads1",
+          "pass_word": "123",
+          "user_area": "north",
+          "user_role": 0
+        },
+        {
+          "id": 4,
+          "full_name": "Chung Chí Lâm",
+          "user_name": "ads2",
+          "pass_word": "123",
+          "user_area": "south",
+          "user_role": 0
+        },
+        {
+          "id": 5,
+          "full_name": "Kha Văn Chuẩn",
+          "user_name": "ads3",
+          "pass_word": "123",
+          "user_area": "west",
+          "user_role": 0
+        },
+        {
+          "id": 6,
+          "full_name": "Nguyên Linh",
+          "user_name": "ads4",
+          "pass_word": "123",
+          "user_area": "west",
+          "user_role": 0
+        },
+        {
+          "id": 7,
+          "full_name": "Trân Văn Cương",
+          "user_name": "ads5",
+          "pass_word": "123",
+          "user_area": "north",
+          "user_role": 0
+        },
+        {
+          "id": 8,
+          "full_name": "Phạm Nhật Linh",
+          "user_name": "ads6",
+          "pass_word": "123",
+          "user_area": "north",
+          "user_role": 0
         }
-    ]
+      ],
+    "project":[
+        {
+          "id": 1,
+          "prj_name": "Sức Khỏe",
+          "prj_date": "2022-05-06T17:00:00.000Z",
+          "prj_teamsize": 11,
+          "prj_expense": 2442343,
+          "prj_spending": 2324
+        },
+        {
+          "id": 5,
+          "prj_name": "Du lịch",
+          "prj_date": "2022-05-03T17:00:00.000Z",
+          "prj_teamsize": 3,
+          "prj_expense": 12300032,
+          "prj_spending": 343434
+        },
+        {
+          "id": 6,
+          "prj_name": "Thể Thao",
+          "prj_date": "2022-05-17T17:00:00.000Z",
+          "prj_teamsize": 23,
+          "prj_expense": 122323242,
+          "prj_spending": 0
+        },
+        {
+          "id": 7,
+          "prj_name": "Giải Trí",
+          "prj_date": "2022-05-05T17:00:00.000Z",
+          "prj_teamsize": 22,
+          "prj_expense": 445464544,
+          "prj_spending": 0
+        },
+        {
+          "id": 8,
+          "prj_name": "Khoa Học",
+          "prj_date": "2022-06-10T17:00:00.000Z",
+          "prj_teamsize": 9,
+          "prj_expense": 3546463,
+          "prj_spending": 0
+        },
+        {
+          "id": 14,
+          "prj_name": "Sức Khỏe",
+          "prj_date": "2022-06-07T17:00:00.000Z",
+          "prj_teamsize": 6,
+          "prj_expense": 24324234,
+          "prj_spending": 32
+        }
+      ]
 }
