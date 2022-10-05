@@ -1,35 +1,21 @@
-const jsonServer = require('json-server')
-const server = jsonServer.create()
-const router = jsonServer.router('db.json')
-const middlewares = jsonServer.defaults()
-
-// Set default middlewares (logger, static, cors and no-cache)
-server.use(middlewares)
-
-// Add custom routes before JSON Server router
-server.get('/echo', (req, res) => {
-  res.jsonp(req.query)
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 3000
+var cors = require('cors')
+app.use(cors())
+app.get('/', (req, res)=>{
+    res.send(
+      {
+        "command":[
+            "docker build -t [name] .",
+            "docker run -p [myport]:[dockerport] [name]",
+            "docker container stop [name/id container]",
+            "docker ps / docker ps -a"
+          ]
+      }
+    )
 })
 
-// To handle POST, PUT and PATCH you need to use a body-parser
-// You can use the one used by JSON Server
-server.use(jsonServer.bodyParser)
-server.use((req, res, next) => {
-  if (req.method === 'POST') {
-    req.body.createdAt = Date.now()
-  }
-  // Continue to JSON Server router
-  next()
+app.listen(port,()=>{
+    console.log(`app is running at port ${port}`);
 })
-
-// Use default router
-
-// server.listen(3000, () => {
-//   console.log('JSON Server is running')
-// })
-
-const PORT = process.env.PORT || 3000;
-server.use(router)
-server.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
